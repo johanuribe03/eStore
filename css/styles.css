@@ -1,0 +1,43 @@
+#header{
+  Width: 100%;
+  Height: 400px;
+  Background-color: green;
+ }
+
+.tittle{
+  Text-align: center;
+  Color:white;
+  Font: sans-serif;
+  Font-size: 3rem;
+  Font-weight: 900;
+  Padding:100px;
+
+ }
+
+/*Products Section*/
+#products {
+   Background-color: orange;
+ }
+
+.products {
+  Width: 20px;
+  Height: 40x;
+  Background-color: yellow;
+ }
+
+
+
+
+#reviewsCarousel {
+
+  Width: 100%;
+  Height: 400px;
+  Background-color: green;
+ }
+
+#contact {
+  Width: 100%;
+  Height: 150px;
+  Background-color: orange;
+
+ }
