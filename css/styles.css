@@ -2,7 +2,7 @@
   Width: 100%;
   Height: 400px;
   Background-color: green;
- }
+ } 
 
 .tittle{
   Text-align: center;
@@ -11,13 +11,22 @@
   Font-size: 3rem;
   Font-weight: 900;
   Padding:100px;
-
- }
+  
+ } 
 
 /*Products Section*/
+
+
+.img0, .img1, .img2{
+  position: relative;
+  width: 12em;
+  padding: 15px 0 35px;
+}
+
+
 #products {
    Background-color: orange;
- }
+ } 
 
 .products {
   Width: 20px;
@@ -29,15 +38,15 @@
 
 
 #reviewsCarousel {
-
+  
   Width: 100%;
   Height: 400px;
   Background-color: green;
- }
+ } 
 
 #contact {
   Width: 100%;
   Height: 150px;
   Background-color: orange;
-
- }
+  
+ } 
