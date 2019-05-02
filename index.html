@@ -1,19 +1,33 @@
-<html>
+<Html>
+
 <head>
   
+  <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link rel="stylesheet" href="css/styles.css">
-
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+  </script>
+  
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+</style>
+  
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+  
 </head>
 
 <body>
 
- <script src="js/myscripts.js"></script>
-   
-    
+  <script src="js/myscripts.js"></script>
+
   <section class="green-section" id="header">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="197">
 
         <a class="navbar-brand" href="">Products.com</a>
 
@@ -43,17 +57,23 @@
 
       <!-- imagen intro, nac  -->
 
-      <div class=tittle>
-        <p>Products.com</p>
+
+      <div class="row">
+        <img class='nature-img' src="https://i.ibb.co/pbBg7XY/Stock-Snap-6-VOP7-FYDYI.jpg" alt='nature-image'>
+        <div class="tittle">
+          <h1 class="big-heading">Products.com</h1>
+          <div class="form-row text-center">
+            <div class="col-lg-12">
+
+              <button type="button" class="btn btn-dark btn-lg download-button">
+                <i class="fab fa-apple"></i> Download</button>
+              <button type="button" class="btn btn-outline-light btn-lg download-button">
+                <i class="fab fa-google-play"></i> Download</button>
+            </div>
+
+          </div>
+        </div>
       </div>
-
-
-      <div class=Img>
-
-
-      </div>
-
-
     </div>
 
   </section>
@@ -62,7 +82,10 @@
   <section class="white-section" id=products>
     <!-- poner los 25 productos con el responsive design-->
 
-
+    <div class="featured">
+      <p class="featured-heading">FEATURED PRODUCTS</p>
+      <p class="featured-message">These are the products that our customers choose.</p>
+    </div>
 
     <div id=text class="row">
 
@@ -72,7 +95,7 @@
             <h3 id=name0></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image0'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image0'>
             <h2 id=price0 class='price-text'></h2>
             <p id=shortDescription0></p>
             <p id=rating0></p>
@@ -80,19 +103,20 @@
             <p id=salePrice0></p>
             <p id=brand0></p>
             <p id=prodId0></p>
-            <p id=description0></p><button type='button' class='btn btn-outline-dark btn-lg btn-block'>Add to Cart</button>
+            <p id=description0></p>
+            <button type='button' class='btn btn-outline-dark btn-lg btn-block responsive-width'>Add to Cart</button>
           </div>
         </div>
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name1></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image1'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image1'>
             <h2 id=price1 class='price-text'></h2>
             <p id=shortDescription1></p>
             <p id=rating1></p>
@@ -106,13 +130,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name2></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image2'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image2'>
             <h2 id=price2 class='price-text'></h2>
             <p id=shortDescription2></p>
             <p id=rating2></p>
@@ -126,13 +150,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name3></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image3'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image3'>
             <h2 id=price3 class='price-text'></h2>
             <p id=shortDescription3></p>
             <p id=rating3></p>
@@ -146,13 +170,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name4></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image4'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image4'>
             <h2 id=price4 class='price-text'></h2>
             <p id=shortDescription4></p>
             <p id=rating4></p>
@@ -166,13 +190,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name5></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image5'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image5'>
             <h2 id=price5 class='price-text'></h2>
             <p id=shortDescription5></p>
             <p id=rating5></p>
@@ -185,13 +209,13 @@
         </div>
       </div>
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name6></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image6'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image6'>
             <h2 id=price6 class='price-text'></h2>
             <p id=shortDescription6></p>
             <p id=rating6></p>
@@ -205,13 +229,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name7></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image7'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image7'>
             <h2 id=price7 class='price-text'></h2>
             <p id=shortDescription7></p>
             <p id=rating7></p>
@@ -225,13 +249,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name8></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image8'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image8'>
             <h2 id=price8 class='price-text'></h2>
             <p id=shortDescription8></p>
             <p id=rating8></p>
@@ -245,13 +269,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name9></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image9'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image9'>
             <h2 id=price9 class='price-text'></h2>
             <p id=shortDescription9></p>
             <p id=rating9></p>
@@ -265,13 +289,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name10></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image10'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image10'>
             <h2 id=price10 class='price-text'></h2>
             <p id=shortDescription10></p>
             <p id=rating10></p>
@@ -284,13 +308,13 @@
         </div>
       </div>
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name11></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image11'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image11'>
             <h2 id=price11 class='price-text'></h2>
             <p id=shortDescription11></p>
             <p id=rating11></p>
@@ -304,13 +328,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name12></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image12'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image12'>
             <h2 id=price12 class='price-text'></h2>
             <p id=shortDescription12></p>
             <p id=rating12></p>
@@ -324,13 +348,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name13></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image13'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image13'>
             <h2 id=price13 class='price-text'></h2>
             <p id=shortDescription13></p>
             <p id=rating13></p>
@@ -344,13 +368,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name14></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image14'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image14'>
             <h2 id=price14 class='price-text'></h2>
             <p id=shortDescription14></p>
             <p id=rating14></p>
@@ -364,13 +388,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name15></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image15'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image15'>
             <h2 id=price15 class='price-text'></h2>
             <p id=shortDescription15></p>
             <p id=rating15></p>
@@ -384,13 +408,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name16></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image16'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image16'>
             <h2 id=price16 class='price-text'></h2>
             <p id=shortDescription16></p>
             <p id=rating16></p>
@@ -404,13 +428,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name17></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image17'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image17'>
             <h2 id=price17 class='price-text'></h2>
             <p id=shortDescription17></p>
             <p id=rating17></p>
@@ -424,13 +448,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name18></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image18'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image18'>
             <h2 id=price18 class='price-text'></h2>
             <p id=shortDescription18></p>
             <p id=rating18></p>
@@ -444,13 +468,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name19></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image19'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image19'>
             <h2 id=price19 class='price-text'></h2>
             <p id=shortDescription19></p>
             <p id=rating19></p>
@@ -464,13 +488,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name20></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image20'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image20'>
             <h2 id=price20 class='price-text'></h2>
             <p id=shortDescription20></p>
             <p id=rating20></p>
@@ -484,13 +508,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name21></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image21'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image21'>
             <h2 id=price21 class='price-text'></h2>
             <p id=shortDescription21></p>
             <p id=rating21></p>
@@ -504,13 +528,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name22></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image22'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image22'>
             <h2 id=price22 class='price-text'></h2>
             <p id=shortDescription22></p>
             <p id=rating22></p>
@@ -524,13 +548,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name23></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image23'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image23'>
             <h2 id=price23 class='price-text'></h2>
             <p id=shortDescription23></p>
             <p id=rating23></p>
@@ -544,13 +568,13 @@
       </div>
 
 
-      <div class='pricing-column col-lg-2 col-md-6 col-sm-12'>
+      <div class='pricing-column col-lg-2 col-md-4 col-sm-12'>
         <div class='card'>
           <div class='card-header'>
             <h3 id=name24></h3>
           </div>
           <div class='card-body'>
-            <img class='img0' src='https://placebeard.it/400x400' alt='image24'>
+            <img class='img0 img-fluid' src='https://placebeard.it/400x400' alt='image24'>
             <h2 id=price24 class='price-text'></h2>
             <p id=shortDescription24></p>
             <p id=rating24></p>
@@ -578,17 +602,17 @@
 
     <section class="green-section" id="testimonials">
       <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-        <div class="carousel-inner">
+        <div class="carousel-inner text-center">
           <div class="carousel-item active container-fluid2">
-            <h2 class="testimonial-text">Awesome products, there are lots of items that I havent found anywhere.</h2>
+            <h2 class="testimonial-text td-flex h-100 align-items-center justify-content-center">Awesome products, there are lots of items that I havent found anywhere.</h2>
             <em>Carl, Nashville</em>
           </div>
           <div class="carousel-item container-fluid2">
-            <h2 class="testimonial-text"> Occaecati laborum voluptates. Voluptatem natus sun. Ut qui ipsa. Aut iste voluptas cupiditate. Aliquid...</h2>
+            <h2 class="testimonial-text td-flex h-100 align-items-center justify-content-center"> Occaecati laborum voluptates. Voluptatem natus sun. Ut qui ipsa. Aut iste voluptas cupiditate. Aliquid...</h2>
             <em>James, Charleston</em>
           </div>
           <div class="carousel-item container-fluid2">
-            <h2 class="testimonial-text"> Deserunt est soluta nobis impedit placeat quia iur...</h2>
+            <h2 class="testimonial-text td-flex h-100 align-items-center justify-content-center"> Deserunt est soluta nobis impedit placeat quia iur...</h2>
             <em>Petter, Minneapolis</em>
           </div>
         </div>
@@ -621,11 +645,12 @@
 
   </section>
 
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</Body>
+</body>
 
 
 </html>
